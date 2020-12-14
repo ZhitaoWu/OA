@@ -1,0 +1,16 @@
+# 配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mmall?useSSL=false
+    username: root
+    password: 1997
+  thymeleaf:  # 前端拦截器
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+# mybatis-plus日志
+mybatis-plus:
+  config-location:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
